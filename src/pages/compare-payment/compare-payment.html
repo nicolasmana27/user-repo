@@ -1,0 +1,135 @@
+<!--
+  Generated template for the ProjectLocationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>COMPARE PAYMENT</ion-title>   
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+   
+      <!--<div #map id="map"></div> -->
+      <!--<form [formGroup]="calculatorForm" (submit)="hitung()" novalidate>
+        <h3>Mortagage Calculator</h3>-->
+          <ion-list>
+           
+                <ion-item>
+                    <ion-label stacked>Harga (Rp)</ion-label>
+                    <ion-input type="number" [(ngModel)]="harga"  placeholder="850.000.000"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Suku Bunga(%)</ion-label>
+                  <ion-input type="number" [(ngModel)]="bunga" placeholder="8.5"></ion-input>
+                </ion-item>
+                
+                <ion-item>
+                    <ion-label stacked>Uang Muka (%)</ion-label>
+                    <ion-input type="number" [(ngModel)]="dp" placeholder="20"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Jangka Waktu (Bulan)</ion-label>
+                  <ion-input type="number" [(ngModel)]="waktu_dp" placeholder="48"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Installment1 (%)</ion-label>
+                  <ion-input type="number" [(ngModel)]="cicilan1" placeholder="20"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Jangka Waktu (Bulan)</ion-label>
+                  <ion-input type="number" [(ngModel)]="waktu_cicilan1" placeholder="48"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Installment2 (%)</ion-label>
+                  <ion-input type="number" [(ngModel)]="cicilan2" placeholder="20"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Jangka Waktu (Bulan)</ion-label>
+                  <ion-input type="number" [(ngModel)]="waktu_cicilan2" placeholder="48"></ion-input>
+                </ion-item>
+
+                <!-- PERHITUNGAN KE 2-->
+
+                <ion-item>
+                    <ion-label stacked>Uang Muka (%)</ion-label>
+                    <ion-input type="number" [(ngModel)]="dp2" placeholder="20"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Jangka Waktu (Bulan)</ion-label>
+                  <ion-input type="number" [(ngModel)]="waktu_dp2" placeholder="48"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Installment1 (%)</ion-label>
+                  <ion-input type="number" [(ngModel)]="cicilan12" placeholder="20"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Jangka Waktu (Bulan)</ion-label>
+                  <ion-input type="number" [(ngModel)]="waktu_cicilan12" placeholder="48"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Installment2 (%)</ion-label>
+                  <ion-input type="number" [(ngModel)]="cicilan22" placeholder="20"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label stacked>Jangka Waktu (Bulan)</ion-label>
+                  <ion-input type="number" [(ngModel)]="waktu_cicilan22" placeholder="48"></ion-input>
+                </ion-item>
+                
+            </ion-list>
+          
+            <button ion-button outline (click)="addThemFunction()">Calculate</button>
+            <ion-card>
+                <ion-card-header>
+                    Calculator Results:
+                </ion-card-header>
+                <!--
+                  <ion-card-content>
+  
+                    <p>Suggestion Price : {{suggestion_price}} </p>
+                          
+                    <p>Suggestion Increase : {{persen_diskon}} </p>
+  
+                    <p>Difference (Suggestion- Price) : {{selisih}} </p>
+  
+                    <p>PV Loss : {{pv_loss}} </p>
+                          
+                    <p>PV : {{jml_pv}} </p>
+                                             
+                </ion-card-content>    
+                          
+                <ion-card-content>
+  
+                     <p>Suggestion Price2 : {{suggestion_price2}} </p>
+                                    
+                     <p>Suggestion Increase2 : {{persen_diskon2}} </p>
+            
+                     <p>Difference (Suggestion- Price)2 : {{selisih2}} </p>
+            
+                     <p>PV Loss2 : {{pv_loss2}} </p>
+                                    
+                     <p>PV2 : {{jml_pv2}} </p>
+                                                       
+                </ion-card-content>    -->
+
+                <ion-card-content>
+  
+                    <p>Suggestion Price Final : {{suggested_price3| number}} </p>
+                                   
+                    <p>Suggestion Increase Final : {{tempo2| number}} </p>
+           
+                    <p>Difference (Suggestion- Price) : {{selisih3 | number}} </p>
+           
+                    <p>PV Loss FINAL : {{pv_loss3 | number}} </p>
+                                   
+                                                      
+               </ion-card-content>    
+                                
+            </ion-card>
+  </ion-content>
+  

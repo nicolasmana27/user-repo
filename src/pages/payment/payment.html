@@ -1,0 +1,78 @@
+<!--
+  Generated template for the ProjectLocationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>PAYMENT</ion-title>   
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ 
+    <!--<div #map id="map"></div> -->
+    <!--<form [formGroup]="calculatorForm" (submit)="hitung()" novalidate>
+      <h3>Mortagage Calculator</h3>-->
+        <ion-list>
+         
+              <ion-item>
+                  <ion-label fixed>Harga (Rp)</ion-label>
+                  <ion-input type="tel" [(ngModel)]="harga"  placeholder="850.000.000" clearInput></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label stacked>Suku Bunga(%)</ion-label>
+                <ion-input type="tel" [(ngModel)]="bunga" placeholder="8.5" clearInput></ion-input>
+              </ion-item>
+              
+              <ion-item>
+                  <ion-label stacked>Uang Muka (%)</ion-label>
+                  <ion-input type="tel" [(ngModel)]="dp" placeholder="20" clearInput></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label stacked>Jangka Waktu (Bulan)</ion-label>
+                <ion-input type="tel" [(ngModel)]="waktu_dp" placeholder="48" clearInput></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label stacked>Installment1 (%)</ion-label>
+                <ion-input type="tel" [(ngModel)]="cicilan1" placeholder="20" clearInput></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label stacked>Jangka Waktu (Bulan)</ion-label>
+                <ion-input type="tel" [(ngModel)]="waktu_cicilan1" placeholder="48" clearInput></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label stacked>Installment2 (%)</ion-label>
+                <ion-input type="tel" [(ngModel)]="cicilan2" placeholder="20"clearInput></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label stacked>Jangka Waktu (Bulan)</ion-label>
+                <ion-input type="tel" [(ngModel)]="waktu_cicilan2" placeholder="48" clearInput></ion-input>
+              </ion-item>
+              
+          </ion-list>
+        
+          <button ion-button outline (click)="addThemFunction()">Calculate</button>
+          <ion-card>
+              <ion-card-header>
+                  Calculator Results:
+              </ion-card-header>
+              <ion-card-content>
+
+                  <p>Suggestion Price : {{suggestion_price | number}} </p>
+                        
+                  <p>Suggestion Increase : {{persen_diskon | number}} </p>
+
+                  <p>Difference (Suggestion- Price) : {{selisih | number}} </p>
+
+                  <p>PV Loss : {{pv_loss | number}} </p>
+                        
+                  <p>PV : {{jml_pv | number}} </p>
+                                           
+                        </ion-card-content>            
+          </ion-card>
+</ion-content>
