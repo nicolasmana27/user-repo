@@ -1,6 +1,6 @@
 {
   "name": "NegotiationCalculator",
-  "app_id": "3ec7121c",
+  "app_id": "d512dc2a",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
